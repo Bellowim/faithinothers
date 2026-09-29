@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102d38">
+  <meta name="description" content="Faith in Others is a place to explore belief, doubt and the questions we share across different faith traditions and worldviews.">
+  <title>Faith in Others | Questions across belief</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Faith in Others, back to top">
+        <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 29c5-10 13-15 21-17M10 19c7 0 14 5 21 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>Faith <i>in</i> Others</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#about">The idea</a>
+        <a href="#themes">Themes</a><a href="#feedback">Feedback</a>
+        <a class="nav-cta" href="#compass">Find your starting point</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow light">A space for curious minds and open hearts</p>
+          <h1 id="hero-title">Different beliefs.<br><em>Shared questions.</em></h1>
+          <p class="hero-lede">Faith in Others invites us to explore what we believe, what we wonder, and how we live alongside people who see the world differently.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#compass">Find your starting point</a>
+            <a class="text-link light-link" href="#about">What is this place? <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note">All faith traditions, spiritual paths and thoughtful uncertainty are welcome.</p>
+        </div>
+        <div class="hero-media">
+          <div class="image-frame">
+            <img src="assets/gathering.webp" alt="People sharing an unhurried conversation around a table" width="1200" height="800">
+          </div>
+          <div class="image-caption"><span class="caption-line"></span>There is room at the table.</div>
+        </div>
+      </div>
+      <div class="hero-bottom shell"><span>01 / An invitation</span><span>Scroll to explore <span aria-hidden="true">↓</span></span></div>
+    </section>
+
+    <section class="intro section-pad" id="about" aria-labelledby="about-title">
+      <div class="shell intro-grid">
+        <div><p class="eyebrow">The idea</p><h2 id="about-title">A better conversation begins with <em>room for difference.</em></h2></div>
+        <div class="intro-body">
+          <p>Questions about meaning, belonging, justice and hope belong to more than one tradition. This project starts with the belief that we can take those differences seriously and still be generous with one another.</p>
+          <p>You do not need to agree, know the right words or speak for an entire community. You can simply bring a question and listen for the human story inside the answer.</p>
+          <div class="principle-row" aria-label="Our approach"><span>Curiosity</span><span>Care</span><span>Honesty</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="compass-section section-pad" id="compass" aria-labelledby="compass-title">
+      <div class="shell compass-grid">
+        <div class="compass-heading">
+          <p class="eyebrow">A place to begin</p>
+          <h2 id="compass-title">What brings<br>you <em>here?</em></h2>
+          <p>Choose the thought closest to yours. We’ll offer a way into the conversation, with no right answer and no sign-up.</p>
+          <div class="compass-ornament" aria-hidden="true"><span>?</span></div>
+        </div>
+        <div class="compass-panel">
+          <div class="panel-topline"><span>YOUR STARTING POINT</span><span>01 / 02</span></div>
+          <fieldset class="choice-fieldset">
+            <legend>I’m here because…</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="reason" value="understand"><span class="choice-number">01</span><span>I want to understand someone else’s beliefs.</span><span class="choice-indicator" aria-hidden="true"></span></label>
+              <label class="choice"><input type="radio" name="reason" value="question"><span class="choice-number">02</span><span>I’m rethinking something I was taught.</span><span class="choice-indicator" aria-hidden="true"></span></label>
+              <label class="choice"><input type="radio" name="reason" value="common"><span class="choice-number">03</span><span>I’m looking for common ground.</span><span class="choice-indicator" aria-hidden="true"></span></label>
+              <label class="choice"><input type="radio" name="reason" value="story"><span class="choice-number">04</span><span>I want to share my own story.</span><span class="choice-indicator" aria-hidden="true"></span></label>
+            </div>
+          </fieldset>
+          <button id="reveal-button" class="button button-dark" type="button" disabled>Show me a way in <span aria-hidden="true">↗</span></button>
+          <div id="compass-result" class="compass-result" hidden tabindex="-1" aria-live="polite">
+            <p class="result-kicker">A WAY IN FOR YOU</p>
+            <h3 id="result-title"></h3>
+            <p id="result-description"></p>
+            <div class="result-prompt"><span>A question to carry</span><blockquote id="result-question"></blockquote></div>
+            <div class="result-actions"><button id="result-theme" class="text-button" type="button">Explore the suggested theme <span aria-hidden="true">↗</span></button><button id="reset-compass" class="quiet-button" type="button">Choose again</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="themes-section section-pad" id="themes" aria-labelledby="themes-title">
+      <div class="shell">
+        <div class="section-heading"><div><p class="eyebrow">Conversation themes</p><h2 id="themes-title">Some questions are<br>better <em>shared.</em></h2></div><p>Choose a theme to find a question worth sitting with. Each one welcomes more than one point of view.</p></div>
+        <div class="theme-grid" role="group" aria-label="Explore conversation themes">
+          <button class="theme-card" type="button" data-theme="belonging" aria-pressed="false"><span class="theme-index">01 /</span><span class="theme-icon" aria-hidden="true">◌</span><span class="theme-title">Belonging</span><span class="theme-teaser">Where do we find home, community and room to be ourselves?</span><span class="theme-action">Explore theme <span aria-hidden="true">↗</span></span></button>
+          <button class="theme-card" type="button" data-theme="doubt" aria-pressed="false"><span class="theme-index">02 /</span><span class="theme-icon" aria-hidden="true">✳</span><span class="theme-title">Doubt & discovery</span><span class="theme-teaser">What changes when we allow a question to remain open?</span><span class="theme-action">Explore theme <span aria-hidden="true">↗</span></span></button>
+          <button class="theme-card" type="button" data-theme="living" aria-pressed="false"><span class="theme-index">03 /</span><span class="theme-icon" aria-hidden="true">◎</span><span class="theme-title">Living together</span><span class="theme-teaser">How can conviction and respect share the same space?</span><span class="theme-action">Explore theme <span aria-hidden="true">↗</span></span></button>
+          <button class="theme-card" type="button" data-theme="hope" aria-pressed="false"><span class="theme-index">04 /</span><span class="theme-icon" aria-hidden="true">✺</span><span class="theme-title">Hope & repair</span><span class="theme-teaser">What helps us begin again, personally and together?</span><span class="theme-action">Explore theme <span aria-hidden="true">↗</span></span></button>
+        </div>
+        <div class="theme-detail" id="theme-detail" hidden tabindex="-1" aria-live="polite">
+          <div class="detail-heading"><span id="detail-number"></span><button id="detail-close" class="detail-close" type="button" aria-label="Close theme details">×</button></div>
+          <div class="detail-grid"><div><h3 id="detail-title"></h3><p id="detail-intro"></p></div><div class="detail-questions"><p class="eyebrow">Questions to begin with</p><ol id="detail-list"></ol><button id="copy-question" class="button button-outline" type="button">Copy a conversation question</button><p class="copy-status" id="copy-status" role="status"></p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback-section section-pad" id="feedback" aria-labelledby="feedback-title">
+      <div class="shell feedback-grid">
+        <div class="feedback-intro">
+          <p class="eyebrow">Help shape this</p>
+          <h2 id="feedback-title">Tell me what<br>you <em>saw.</em></h2>
+          <p>Faith in Others is still taking shape. After exploring the page, what do you think it could become? What would make you want to return?</p>
+          <p class="feedback-aside">A small, honest observation is more useful than a perfect answer.</p>
+        </div>
+        <form class="feedback-form" action="https://formspree.io/f/mppwbyad" method="POST">
+          <div class="form-heading"><span>PAGE FEEDBACK</span><span>01 / 01</span></div>
+          <div class="field"><label for="feedback-message">What did you understand this project to be? <span>Required</span></label><textarea id="feedback-message" name="message" rows="4" required placeholder="A few words are enough..."></textarea></div>
+          <div class="field"><label for="feedback-next">What would you like to see next? <span>Optional</span></label><textarea id="feedback-next" name="what_next" rows="3" placeholder="A topic, a feature or a question..."></textarea></div>
+          <div class="form-two-col">
+            <div class="field"><label for="feedback-name">Your name <span>Optional</span></label><input id="feedback-name" name="name" type="text" autocomplete="name"></div>
+            <div class="field"><label for="feedback-email">Email, if you would like a reply <span>Optional</span></label><input id="feedback-email" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <p class="form-note">This sends feedback about the page. It does not add you to a mailing list.</p>
+          <button class="button button-dark" type="submit">Send feedback <span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="closing-section" aria-labelledby="closing-title">
+      <div class="shell closing-grid"><p class="eyebrow light">An open invitation</p><div><h2 id="closing-title">Come as you are.<br><em>Leave with a question.</em></h2><p>This is the beginning of Faith in Others: a collection of starting points for conversations that make space for both conviction and curiosity.</p><a class="button button-light" href="#compass">Find your starting point</a></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="brand footer-brand" href="#top"><svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 29c5-10 13-15 21-17M10 19c7 0 14 5 21 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Faith <i>in</i> Others</span></a><p>A place to ask, listen and meet across belief.</p><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>
